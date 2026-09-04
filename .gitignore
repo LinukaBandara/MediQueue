@@ -1,0 +1,64 @@
+﻿# =========================
+# MediQueue root
+# =========================
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Laravel backend
+# =========================
+
+mediqueue-backend/.env
+mediqueue-backend/.env.*
+!mediqueue-backend/.env.example
+
+mediqueue-backend/vendor/
+mediqueue-backend/node_modules/
+
+mediqueue-backend/storage/*.key
+mediqueue-backend/storage/logs/*
+mediqueue-backend/storage/framework/cache/*
+mediqueue-backend/storage/framework/sessions/*
+mediqueue-backend/storage/framework/testing/*
+mediqueue-backend/storage/framework/views/*
+
+mediqueue-backend/bootstrap/cache/*
+
+# Local databases
+mediqueue-backend/database/*.sqlite
+mediqueue-backend/database/*.sqlite-*
+mediqueue-backend/database/*.db
+
+# Laravel/PHP tooling
+mediqueue-backend/.phpunit.result.cache
+
+# =========================
+# Next.js frontend
+# =========================
+
+mediqueue-frontend/node_modules/
+mediqueue-frontend/.next/
+mediqueue-frontend/out/
+
+mediqueue-frontend/.env.local
+mediqueue-frontend/.env.*
+!mediqueue-frontend/.env.example
+
+mediqueue-frontend/coverage/
+mediqueue-frontend/.vercel/
+
+# =========================
+# Logs
+# =========================
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
